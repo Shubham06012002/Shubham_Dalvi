@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+span a {
+    color: black;
+    text-decoration: none;
+}
+
+.title {
+    letter-spacing: 3px;
+    color: #b4814b;
+    font-family: 'Satisfy', cursive;
+}
+
+h4 {
+    color: #b4814b;
+}
+
+.cards {
+    opacity: 0;
+    transition: 1000ms;
+    transform: scale(0.8);
+}
+
+.cards.showC {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.projects {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: 1000ms;
+    /* box-shadow: 3px 3px 13px black; */
+    /* transform: scale(0.5); */
+}
+
+.projects.showP {
+    opacity: 1;
+    /* transform: scale(1); */
+    transform: translateX(0px);
+}
+
+#subProject {
+    font-style: italic;
+}
+
+.serviceText h3 {
+    font-size: 20px;
+    background-color: khaki;
+    padding: 10px;
+}
+
+#aboutUS,
+#contact {
+    /*background-image: url('../images/textbackground.jpg');*/
+    background-image: url('../images/bg-colour.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 3em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.testinomial {
+    background-color: khaki;
+    box-shadow: 2px 2px 9px black;
+}
+.splash {
+    background-image: url('../images/pf-s107-td-003.jpg');
+}
+
+.upArrow {
+    background-color: rgb(100, 119, 217);
+
+    width: 40px;
+    border-radius: 23px;
+    margin-bottom: -99px;
+}
+
+.largetext {
+    font-size: 51px;
+}
+
+.largetextp {
+    font-family: 'Satisfy', cursive;
+}
+
+.largeTextDiv {
+    margin-top: -58px;
+    margin-left: 48px;
+
+}
+
+.image {
+    position: relative;
+   /* width: 400px;*/
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: auto;
+    width: 93%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: khaki;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background: #009578;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+    .image__overlay:hover > * {
+        transform: translateY(0);
+    }
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
