@@ -41,7 +41,7 @@ function removeNotification(key) {
     notification.classList.add("fade");
     setTimeout(() => {
         notification.remove();
-    },200000);
+    },200);
 }
 const notificationContainer = document.createElement("div");
 notificationContainer.id = "notification-container";
