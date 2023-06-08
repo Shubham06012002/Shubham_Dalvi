@@ -112,7 +112,7 @@
         </div>
         <div class=" row container mx-auto" id="subProject">
             <div class="col-lg-4 mb-3 projects">
-                <img src="images/Carpet.jpg" class="w-100" alt="">
+                <img src="images/Carpet101.jpg" class="w-100" alt="">
             </div>
             <div class="col-lg-8 d-flex align-items-center">
                 <p>
@@ -136,12 +136,12 @@
                     </p>
                 </div>
                 <div class="col-lg-4  projects mb-3">
-                    <img loading="lazy" src="images/Library.jpg" class="w-100" alt="">
+                    <img loading="lazy" src="images/Library101.jpg" class="w-100" alt="">
                 </div>
             </div>
             <hr>
             <div class="col-lg-4  mb-3 projects">
-                <img loading="lazy" src="images/Dining.jpg" class="w-100" alt="">
+                <img loading="lazy" src="images/Dining101.jpg" class="w-100" alt="">
             </div>
             <div class="col-lg-8 d-flex align-items-center">
                 <p>
@@ -165,7 +165,7 @@
                     </p>
                 </div>
                 <div class="col-lg-4 projects image  mb-3">
-                    <img loading="lazy" src="images/Childrensroom.jpg" class="w-100" alt="">
+                    <img loading="lazy" src="images/Childrensroom 101.jpg" class="w-100" alt="">
                 </div>
             </div>
             <hr>
@@ -214,7 +214,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-6 row mb-4   mx-auto">
+            <div class="col-lg-6 row mb-4   mx-auto">            
                 <div class="col-lg-8 image">
                     <img loading="lazy" src="images/commercial.jpg" class="w-100 h-100" alt="">
                     <div class="image__overlay">
@@ -318,7 +318,49 @@
             </div>
         </div>
     </div>
+    <hr />
+        
+    
+  
+    <div class="p-3 col-9">
+        <iframe class="w-100"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242117.7090647206!2d73.69814992360263!3d18.52487061430354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1682493344195!5m2!1sen!2sin"
+                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+        <div class="col-md-5 col-12">
+            <div class="">
+                <div class=" col-12 ">
+                    <form asp-action="Create" class=" col-lg-8 ">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="Name" class="control-label"></label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Message" class="control-label"></label>
+                            <input asp-for="Message" class="form-control" />
+                            <span asp-validation-for="Message" class="text-danger"></span>
+                        </div>
+                        <div class="form-group my-3">
+                            <button id="success" class="btn btn-success largetextp" onclick="notify('success', 'Success Notification', 'Thank you for show interest in your Scheme we will contact you in 2 working days ')">Submit</button>
+                            @*<input type="submit" value="Create" class="btn btn-primary" />*@
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
 
    
    
@@ -344,13 +386,9 @@
             </section>
          
             <section class="">
-             
-                   
-                    <div class="row d-flex justify-content-center text-dark">
-                        <iframe class="w-100 "
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242117.7090647206!2d73.69814992360263!3d18.52487061430354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1682493344195!5m2!1sen!2sin"
-                                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+                <div class="row d-flex justify-content-center text-dark">
+                       
                      
                         <div class="col-auto">
                             <p class="pt-2">
@@ -358,35 +396,7 @@
                             </p>
                         </div>
                       
-                        <div class="col-md-5 col-12">
-                            <div class="row">
-                                <div class="row col-12 ">
-                                    <form asp-action="Create" class=" col-lg-8 ">
-                                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                                        <div class="form-group">
-                                            <label asp-for="Name" class="control-label"></label>
-                                            <input asp-for="Name" class="form-control" />
-                                            <span asp-validation-for="Name" class="text-danger"></span>
-                                        </div>
-                                        <div class="form-group">
-                                            <label asp-for="Email" class="control-label"></label>
-                                            <input asp-for="Email" class="form-control" />
-                                            <span asp-validation-for="Email" class="text-danger"></span>
-                                        </div>
-                                        <div class="form-group">
-                                            <label asp-for="Message" class="control-label"></label>
-                                            <input asp-for="Message" class="form-control" />
-                                            <span asp-validation-for="Message" class="text-danger"></span>
-                                        </div>
-                                        <div class="form-group my-3">
-                                            <button id="success" class="btn btn-success largetextp" onclick="notify('success', 'Success Notification', 'Thank you for show interest in your Scheme we will contact you in 2 working days ')">Submit</button>
-                                            @*<input type="submit" value="Create" class="btn btn-primary" />*@
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-
-                        </div>
+                        
 
                     </div>
             </section>
@@ -412,3 +422,6 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+
+
